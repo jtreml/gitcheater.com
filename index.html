@@ -154,9 +154,28 @@
 				<div class="item">
 					<h1>Create &amp; Clone Repositories</h1>
 					<table>
-						<tr><td class="bullet">&#149;</td><td class="code">git init [--bare]</td></tr>
+						<tr>
+							<td class="bullet">
+								&#149;
+								<ul class="menu">
+									<li><a href="http://schacon.github.com/git/git-init.html" target="_blank">Man Page</a></li>
+									<li><a href="https://www.google.com/search?q=git%20init" target="_blank">Google</a></li>
+									<li><a href="http://book.git-scm.com/3_getting_a_git_repository.html" target="_blank">Git Book</a></li>
+								</ul>
+							</td>
+							<td class="code">git init [--bare]</td>
+						</tr>
 						<tr><td class="bullet"></td><td class="code"></td></tr>
-						<tr><td class="bullet">&#149;</td><td class="code">git clone user@server:/path/to/repository</td></tr>
+						<tr>
+							<td class="bullet">
+								&#149;
+								<ul class="menu">
+									<li><a href="http://schacon.github.com/git/git-clone.html" target="_blank">Man Page</a></li>
+									<li><a href="https://www.google.com/search?q=git%20clone" target="_blank">Google</a></li>
+									<li><a href="http://book.git-scm.com/3_getting_a_git_repository.html" target="_blank">Git Book</a></li>
+								</ul>
+							</td>
+							<td class="code">git clone user@server:/path/to/repository</td></tr>
 						<tr><td class="bullet"></td><td class="code">git clone https://github.com/twitter/bootstrap.git</td></tr>
 						<tr><td class="bullet"></td><td class="code">git clone git://github.com/twitter/bootstrap.git</td></tr>
 					</table>
@@ -164,17 +183,19 @@
 				<div class="item">
 					<h1>Using the Stash</h1>
 					<table>
-						<tr><td class="bullet">&#149;</td><td class="code">git stash save ["some comment"]</td></tr>
-						<tr><td class="bullet"></td><td class="code"></td></tr>
 						<tr>
-							<td class="bullet">&#149;
+							<td class="bullet">
+								&#149;
 								<ul class="menu">
-									<li><a href="#">Man Page</a></li>
-									<li><a href="#">Google</a></li>
-									<li><a href="#">Git Book</a></li>
+									<li><a href="http://schacon.github.com/git/git-stash.html" target="_blank">Man Page</a></li>
+									<li><a href="https://www.google.com/search?q=git%20stash" target="_blank">Google</a></li>
+									<li><a href="http://book.git-scm.com/4_stashing.html" target="_blank">Git Book</a></li>
 								</ul>
 							</td>
-							<td class="code">git stash pop [stash@{1}]</td></tr>
+							<td class="code">git stash save ["some comment"]</td>
+						</tr>
+						<tr><td class="bullet"></td><td class="code"></td></tr>
+						<tr><td class="bullet"></td><td class="code">git stash pop [stash@{1}]</td></tr>
 						<tr><td class="bullet"></td><td class="code">git stash apply [stash@{1}]</td></tr>
 						<tr><td class="bullet"></td><td class="code"></td></tr>
 						<tr><td class="bullet"></td><td class="code">git stash list</td></tr>

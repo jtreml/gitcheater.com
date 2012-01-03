@@ -75,6 +75,12 @@
 				padding-left: 5px;
 			}
 
+			.item table td.comment {
+				font-family: "Courier New", Courier, monospace;
+				color: #008000;
+				padding-left: 5px;
+			}
+
 
 			.item h1 {
 				font-size: 12px;
@@ -100,6 +106,7 @@
 				border-radius: 3px;
 				padding: 3px 5px 7px 5px;
 				text-align: left;
+				z-index: 100;
 			}
 
 			ul.menu li a {
@@ -204,7 +211,50 @@
 						<tr><td class="bullet"></td><td class="code">git stash clear</td></tr>
 					</table>
 				</div>
-				<div class="item small">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</div>
+				<div class="item">
+					<h1>Showing Differences</h1>
+					<table>
+						<tr><td class="bullet"></td><td class="comment">Working Copy vs. Staging Area</td></tr>
+						<tr>
+							<td class="bullet">
+								&#149;
+								<ul class="menu">
+									<li><a href="http://schacon.github.com/git/git-diff.html" target="_blank">Man Page</a></li>
+									<li><a href="https://www.google.com/search?q=git%20diff" target="_blank">Google</a></li>
+									<li><a href="http://book.git-scm.com/3_comparing_commits_-_git_diff.html" target="_blank">Git Book</a></li>
+								</ul>
+							</td>
+							<td class="code">git diff [file]</td>
+						</tr>
+						<tr>
+							<td class="bullet">
+								&#149;
+								<ul class="menu">
+									<li><a href="http://schacon.github.com/git/git-difftool.html" target="_blank">Man Page</a></li>
+									<li><a href="https://www.google.com/search?q=git%20difftool" target="_blank">Google</a></li>
+								</ul>
+							</td>
+							<td class="code">git difftool [-t toolName] [file]</td>
+						</tr>
+						<tr><td class="bullet"></td><td class="comment">Staging Area vs. Last Commit</td></tr>
+						<tr><td class="bullet"></td><td class="code">git diff --cached [file]</td></tr>
+						<tr><td class="bullet"></td><td class="code">git difftool [-t toolName] --cached [file]</td></tr>
+						<tr><td class="bullet"></td><td class="code"></td></tr>
+						<tr><td class="bullet"></td><td class="Comment">Differences after fetching remote</td></tr>
+						<tr>
+							<td class="bullet">
+								&#149;
+								<ul class="menu">
+									<li><a href="http://schacon.github.com/git/git-log.html" target="_blank">Man Page</a></li>
+									<li><a href="https://www.google.com/search?q=git%20log" target="_blank">Google</a></li>
+									<li><a href="http://book.git-scm.com/3_reviewing_history_-_git_log.html" target="_blank">Git Book</a></li>
+								</ul>
+							</td>
+							<td class="code">git log HEAD..origin</td>
+						</tr>
+						<tr><td class="bullet"></td><td class="code">git diff HEAD...origin</td></tr>
+					</table>
+				</div>
 				<div class="item small">Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</div>
 				<div class="item small">ste adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año </div>
 				<div class="item small"> menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado </div>

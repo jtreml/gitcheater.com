@@ -94,11 +94,6 @@
 				font-size: 12px;
 			}
 
-			.small {
-				font-size: 6px;
-				max-width: 200px;
-			}
-
 			div.menu {
 				position: relative;
 			}
@@ -170,8 +165,10 @@
 	<body>
 		<div id="outer">
 			<div id="container">
+
+				<!-- Init & Clone -->
 				<div class="item">
-					<h1>Create &amp; Clone Repositories</h1>
+					<h1>CREATE &amp; CLONE Repositories</h1>
 					<table>
 						<tr>
 							<td class="bullet">
@@ -203,8 +200,10 @@
 						<tr><td class="bullet"></td><td class="code">git clone git://github.com/twitter/bootstrap.git</td></tr>
 					</table>
 				</div>
+
+				<!-- Stash -->
 				<div class="item">
-					<h1>Using the Stash</h1>
+					<h1>Using the STASH</h1>
 					<table>
 						<tr>
 							<td class="bullet">
@@ -230,10 +229,11 @@
 					</table>
 				</div>
 
+				<!-- Differences -->
 				<div class="item">
-					<h1>Showing Differences</h1>
+					<h1>Showing DIFFERENCES</h1>
 					<table>
-						<tr><td class="bullet"></td><td class="comment">// Working Copy vs. Staging Area</td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Working Copy vs. Staging Area</td></tr>
 						<tr>
 							<td class="bullet">
 								<div class="menu">
@@ -259,35 +259,34 @@
 							</td>
 							<td class="code">git difftool [-t toolName] [file]</td>
 						</tr>
-						<tr><td class="bullet"></td><td class="comment">// Staging Area vs. Last Commit</td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Staging Area vs. Last Commit</td></tr>
 						<tr><td class="bullet"></td><td class="code">git diff --cached [file]</td></tr>
 						<tr><td class="bullet"></td><td class="code">git difftool [-t toolName] --cached [file]</td></tr>
-						<tr><td class="bullet"></td><td class="comment">// Working copy vs. commit</td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Working copy vs. commit</td></tr>
 						<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt; [file]</td></tr>
-						<tr><td class="bullet"></td><td class="comment">// Commit vs. ...</td></tr>
-						<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt;..&lt;commit&gt; [file] <span class="comment">// other commit</span></td></tr>
-						<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt;...&lt;commit&gt; [file] <span class="comment">// common ancestor</span></td></tr>
-						<tr><td class="bullet"></td><td class="Comment">Differences after fetching remote</td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Commit vs. ...</td></tr>
+						<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt;..&lt;commit&gt; [file] <span class="comment"># other commit</span></td></tr>
+						<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt;...&lt;commit&gt; [file] <span class="comment"># common ancestor</span></td></tr>
+						<tr><td class="bullet"></td><td class="Comment"># Example: Differences after fetching remote</td></tr>
 						<tr>
 							<td class="bullet">
 								<div class="menu">
 									&#149;
 									<ul class="menu">
-										<li><a href="http://schacon.github.com/git/git-log.html" target="_blank">Man Page</a></li>
-										<li><a href="https://www.google.com/search?q=git%20log" target="_blank">Google</a></li>
-										<li><a href="http://book.git-scm.com/3_reviewing_history_-_git_log.html" target="_blank">Git Book</a></li>
+										<li><a href="http://schacon.github.com/git/git-fetch.html" target="_blank">Man Page</a></li>
+										<li><a href="https://www.google.com/search?q=git%20fetch" target="_blank">Google</a></li>
+										<li><a href="http://book.git-scm.com/3_distributed_workflows.html" target="_blank">Git Book</a></li>
 									</ul>
 								</div>
 							</td>
-							<td class="code">git log HEAD..origin</td>
+							<td class="code">git fetch</td>
 						</tr>
-						<tr><td class="bullet"></td><td class="code">git diff HEAD...origin</td></tr>
+						<tr><td class="bullet"></td><td class="code">git diff FETCH_HEAD..HEAD</td></tr>
+						<tr><td class="bullet"></td><td class="code">git diff FETCH_HEAD...HEAD</td></tr>
 					</table>
 				</div>
 
-				<div class="item small">Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</div>
-				<div class="item small">ste adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año </div>
-				<div class="item small"> menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado </div>
+				<!-- Twitter Widget -->
 				<div class="item" style="width: 240px; height: 340px; padding-left: 15px;">
 					<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 					<script>
@@ -321,7 +320,7 @@
 				
 				<!-- Viewing the log -->
 				<div class="item">
-					<h1>Viewing the log</h1>
+					<h1>Viewing the LOG</h1>
 					<table>
 						<tr>
 							<td class="bullet">
@@ -336,17 +335,76 @@
 							</td>
 							<td class="code">git log [--oneline] [--graph]</td>
 						</tr>
-						<tr><td class="bullet"></td><td class="comment">// Test</td></tr>
-						<tr><td class="bullet"></td><td class="code">git log HEAD..origin</td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Example:<br /># Commits between local and remote</td></tr>
+						<tr><td class="bullet"></td><td class="code">git log FETCH_HEAD...HEAD</td></tr>
+						<tr><td class="bullet"></td><td class="code">git log HEAD...FETCH_HEAD</td></tr>
 					</table>
 				</div>
 
-				<div class="item small">Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32 El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</div>
-				<div class="item small">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</div>
-				<div class="item small">Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</div>
-				<div class="item small">ste adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año </div>
-				<div class="item small"> menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado </div>
-				<div class="item small">industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las </div>			
+				<!-- Branches -->
+				<div class="item">
+					<h1>Working with BRANCHES</h1>
+					<table>
+						<tr><td class="bullet"></td><td class="comment"># List branches</td></tr>
+						<tr>
+							<td class="bullet">
+								<div class="menu">
+									&#149;
+									<ul class="menu">
+										<li><a href="http://schacon.github.com/git/git-branch.html" target="_blank">Man Page</a></li>
+										<li><a href="https://www.google.com/search?q=git%20branch" target="_blank">Google</a></li>
+										<li><a href="http://book.git-scm.com/3_basic_branching_and_merging.html" target="_blank">Git Book</a></li>
+									</ul>
+								</div>
+							</td>
+							<td class="code">git branch [-a]</td>
+						</tr>
+						<tr><td class="bullet"></td><td class="comment"># Create a branch...</td></tr>
+						<tr><td class="bullet"></td><td class="code">git branch &lt;name&gt;</td></tr>
+						<tr>
+							<td class="bullet">
+								<div class="menu">
+									&#149;
+									<ul class="menu">
+										<li><a href="http://schacon.github.com/git/git-checkout.html" target="_blank">Man Page</a></li>
+										<li><a href="https://www.google.com/search?q=git%20checkout" target="_blank">Google</a></li>
+										<li><a href="http://book.git-scm.com/3_basic_branching_and_merging.html" target="_blank">Git Book</a></li>
+									</ul>
+								</div>
+							</td>
+							<td class="code">git checkout &lt;name&gt;</td>
+						</tr>
+						<tr><td class="bullet"></td><td class="comment"># ... or shorter</td></tr>
+						<tr><td class="bullet"></td><td class="code">git checkout -b &lt;name&gt;</td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Delete branch</td></tr>
+						<tr><td class="bullet"></td><td class="code">git branch -d &lt;name&gt;</td></tr>
+					</table>
+				</div>
+
+				<!-- Remotes -->
+				<div class="item">
+					<h1>Working with REMOTEs</h1>
+					<table>
+						<tr><td class="bullet"></td><td class="comment"># List ...</td></tr>
+						<tr>
+							<td class="bullet">
+								<div class="menu">
+									&#149;
+									<ul class="menu">
+										<li><a href="http://schacon.github.com/git/git-remote.html" target="_blank">Man Page</a></li>
+										<li><a href="https://www.google.com/search?q=git%20remote" target="_blank">Google</a></li>
+									</ul>
+								</div>
+							</td>
+							<td class="code">git remote [-v] <span class="comment"># remotes</span></td>
+						</tr>
+						<tr><td class="bullet"></td><td class="code">git remote show &lt;name&gt; <span class="comment"># remote's details</span></td></tr>
+						<tr><td class="bullet"></td><td class="comment"># Add / remove remote</td></tr>
+						<tr><td class="bullet"></td><td class="code">git remote add &lt;name&gt; &lt;path&gt;</td></tr>
+						<tr><td class="bullet"></td><td class="code">git remote rm &lt;name&gt;</td></tr>
+					</table>
+				</div>
+
 			</div>
 		</div>
 	</body>

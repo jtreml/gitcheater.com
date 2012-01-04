@@ -1,0 +1,74 @@
+/* CSS for header and footer */
+
+div#header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	background-color: #333;
+	z-index: 200;
+	-moz-box-shadow: 0px 0px 4px #333;
+	-webkit-box-shadow: 0px 0px 4px #333;
+	box-shadow: 0px 0px 4px #333;
+	text-align: center;
+}
+
+div#footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	background-color: #333;
+	z-index: 200;
+	-moz-box-shadow: -0px -0px 4px #333;
+	-webkit-box-shadow: -0px -0px 4px #333;
+	box-shadow: -0px -0px 4px #333;
+}
+
+#header span {
+	font-size: 60px;
+	font-weight: bold;
+	color: #2E2E2E;
+	text-shadow: 0px 1px 0px #3E3E3E;
+	line-height: 90px;
+}
+
+#footer span {
+	position: absolute;
+	bottom: 5;
+}
+
+#footer span.right { right: 5; }
+#footer span.left { left: 5; }
+
+#footer span,
+#footer span a,
+#footer span a:hover,
+#footer span a:visited {
+	font-size: 44px;
+	font-weight: bold;
+	color: #2E2E2E;
+	text-shadow: 0px 1px 0px #3E3E3E;
+	text-decoration: none;
+}
+
+@media screen{
+	body > div#header{
+		position: fixed;
+	}
+
+	body > div#footer{
+		position: fixed;
+	}
+}
+
+* html body {
+	overflow: hidden;
+} 
+
+* html div#content{
+	height: 100%;
+	overflow: auto;
+}

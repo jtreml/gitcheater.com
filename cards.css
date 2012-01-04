@@ -104,6 +104,12 @@ body {
 	opacity: 0.5;
 }
 
+.item table td.comment a,
+.item table td.comment a:visited,
+.item table td.comment a:hover {
+	color: #008000;
+}
+
 span.comment {
 	font-family: "Courier New", Courier, monospace;
 	color: #008000;

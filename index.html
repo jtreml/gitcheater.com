@@ -469,6 +469,30 @@
 							<tr><td class="bullet"></td><td class="code">git stash clear</td></tr>
 						</table>
 					</div>
+
+					<!-- Reset -->
+					<div class="item">
+						<h1>RESETting things</h1>
+						<table>
+							<tr><td class="bullet"></td><td class="comment"># Reset everything (working dir &amp; stage to last commit)</td></tr>
+							<tr>
+								<td class="bullet">
+									<div class="menu">
+										&#149;
+										<ul class="menu">
+											<li><a href="http://schacon.github.com/git/git-reset.html" target="_blank">Man Page</a></li>
+											<li><a href="https://www.google.com/search?q=git%20reset" target="_blank">Google</a></li>
+											<li><a href="http://book.git-scm.com/4_undoing_in_git_-_reset,_checkout_and_revert.html" target="_blank">Git Book</a></li>
+										</ul>
+									</div>
+								</td>
+								<td class="code">git reset --hard HEAD</td>
+							</tr>
+							<tr><td class="bullet"></td><td class="comment"># Reset a single file</td></tr>
+							<tr><td class="bullet"></td><td class="code">git checkout -- &lt;file&gt; <span class="comment"># working dir to staged state</span></td></tr>
+							<tr><td class="bullet"></td><td class="code">git checkout HEAD &lt;file&gt; <span class="comment"># working dir &amp; stage to last commit</span></td></tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

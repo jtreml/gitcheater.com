@@ -135,14 +135,29 @@
 											<li><a href="http://schacon.github.com/git/git-log.html" target="_blank">Man Page</a></li>
 											<li><a href="https://www.google.com/search?q=git%20log" target="_blank">Google</a></li>
 											<li><a href="http://book.git-scm.com/3_reviewing_history_-_git_log.html" target="_blank">Git Book</a></li>
+											<li><a>&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;</a></li>
+											<li><a href="http://stackoverflow.com/questions/180272/how-to-preview-git-pull-without-doing-fetch" target="_blank">Preview Pull</a></li>
 										</ul>
 									</div>
 								</td>
-								<td class="code">git log [--oneline] [--graph]</td>
+								<td class="code">git log [--oneline] [--graph] [--all]</td>
 							</tr>
-							<tr><td class="bullet"></td><td class="comment"># Example:<br /># Commits between local and remote</td></tr>
-							<tr><td class="bullet"></td><td class="code">git log FETCH_HEAD...HEAD</td></tr>
-							<tr><td class="bullet"></td><td class="code">git log HEAD...FETCH_HEAD</td></tr>
+							<tr><td class="bullet"></td><td class="comment"># Commits common ancestor of <br /># local and remote to...</td></tr>
+							<tr>
+								<td class="bullet">
+									<div class="menu">
+										&#149;
+										<ul class="menu">
+											<li><a href="http://schacon.github.com/git/git-fetch.html" target="_blank">Man Page</a></li>
+											<li><a href="https://www.google.com/search?q=git%20fetch" target="_blank">Google</a></li>
+											<li><a href="http://book.git-scm.com/3_distributed_workflows.html" target="_blank">Git Book</a></li>
+										</ul>
+									</div>
+								</td>
+								<td class="code">git fetch &lt;remote&gt;</td>
+							</tr>
+							<tr><td class="bullet"></td><td class="code">git log HEAD..FETCH_HEAD <span class="comment"># ... remote</span></td></tr>
+							<tr><td class="bullet"></td><td class="code">git log FETCH_HEAD..HEAD <span class="comment"># ... local</span></td></tr>
 						</table>
 					</div>
 
@@ -191,6 +206,8 @@
 											<li><a href="http://schacon.github.com/git/git-diff.html" target="_blank">Man Page</a></li>
 											<li><a href="https://www.google.com/search?q=git%20diff" target="_blank">Google</a></li>
 											<li><a href="http://book.git-scm.com/3_comparing_commits_-_git_diff.html" target="_blank">Git Book</a></li>
+											<li><a>&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;</a></li>
+											<li><a href="http://matthew-brett.github.com/pydagogue/git_diff_dots.html" target="_blank">Two vs. Three Dots</a></li>
 										</ul>
 									</div>
 								</td>
@@ -216,7 +233,7 @@
 							<tr><td class="bullet"></td><td class="comment"># Commit vs. ...</td></tr>
 							<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt;..&lt;commit&gt; [file] <span class="comment"># other commit</span></td></tr>
 							<tr><td class="bullet"></td><td class="code">git diff &lt;commit&gt;...&lt;commit&gt; [file] <span class="comment"># common ancestor</span></td></tr>
-							<tr><td class="bullet"></td><td class="Comment"># Example: Differences after fetching remote</td></tr>
+							<tr><td class="bullet"></td><td class="Comment"># Differences between remote and local...</td></tr>
 							<tr>
 								<td class="bullet">
 									<div class="menu">
@@ -228,10 +245,10 @@
 										</ul>
 									</div>
 								</td>
-								<td class="code">git fetch</td>
+								<td class="code">git fetch &lt;remote&gt;</td>
 							</tr>
-							<tr><td class="bullet"></td><td class="code">git diff FETCH_HEAD..HEAD</td></tr>
-							<tr><td class="bullet"></td><td class="code">git diff FETCH_HEAD...HEAD</td></tr>
+							<tr><td class="bullet"></td><td class="code">git diff HEAD[..]FETCH_HEAD <span class="comment"># ... direct diff</span></td></tr>
+							<tr><td class="bullet"></td><td class="code">git diff HEAD...FETCH_HEAD <span class="comment"># ... common ancestor</span></td></tr>
 						</table>
 					</div>
 
@@ -396,7 +413,7 @@
 										</ul>
 									</div>
 								</td>
-								<td class="code">git fetch &lt;repository&gt;</td>
+								<td class="code">git fetch &lt;remote&gt;</td>
 							</tr>
 							<tr>
 								<td class="bullet">
@@ -409,7 +426,7 @@
 										</ul>
 									</div>
 								</td>
-								<td class="code">git merge &lt;repository&gt;/&lt;branch&gt;</td>
+								<td class="code">git merge &lt;remote&gt;/&lt;branch&gt;</td>
 							</tr>
 							<tr><td class="bullet"></td><td class="comment"># or both commands in one</td></tr>
 							<tr>
@@ -423,7 +440,7 @@
 										</ul>
 									</div>
 								</td>
-								<td class="code">git pull [--rebase] &lt;repository&gt; [&lt;branch&gt;]</td>
+								<td class="code">git pull [--rebase] &lt;remote&gt; [&lt;branch&gt;]</td>
 							</tr>
 							<tr><td class="bullet"></td><td class="comment"># Push changes to remote repository</td></tr>
 							<tr>
@@ -437,7 +454,7 @@
 										</ul>
 									</div>
 								</td>
-								<td class="code">git push &lt;repository&gt; &lt;local branch&gt;[:&lt;remote branch&gt;]</td>
+								<td class="code">git push &lt;remote&gt; &lt;local branch&gt;[:&lt;remote branch&gt;]</td>
 							</tr>
 						</table>
 					</div>

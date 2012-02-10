@@ -510,6 +510,41 @@
 							<tr><td class="bullet"></td><td class="code">git checkout HEAD &lt;file&gt; <span class="comment"># working dir &amp; stage to last commit</span></td></tr>
 						</table>
 					</div>
+
+					<!-- Tagging & Exporting -->
+					<div class="item">
+						<h1>TAGging &amp; exporting</h1>
+						<table>
+							<tr><td class="bullet"></td><td class="comment"># Tag a commit</td></tr>
+							<tr>
+								<td class="bullet">
+									<div class="menu">
+										&#149;
+										<ul class="menu">
+											<li><a href="http://schacon.github.com/git/git-tag.html" target="_blank">Man Page</a></li>
+											<li><a href="https://www.google.com/search?q=git%20tag" target="_blank">Google</a></li>
+											<li><a href="http://book.git-scm.com/3_git_tag.html" target="_blank">Git Book</a></li>
+										</ul>
+									</div>
+								</td>
+								<td class="code">git tag &lt;label&gt; [&lt;commit&gt;] <span class="comment"># lightweight</span></td>
+							</tr>
+							<tr><td class="bullet"></td><td class="code">git tag -a &lt;label&gt; -m &lt;comment&gt; [&lt;commit&gt;] <span class="comment"># full</span></td></tr>
+							<tr><td class="bullet"></td><td class="comment"># Export / archive a commit</td></tr>
+							<tr>
+								<td class="bullet">
+									<div class="menu">
+										&#149;
+										<ul class="menu">
+											<li><a href="http://schacon.github.com/git/git-archive.html" target="_blank">Man Page</a></li>
+											<li><a href="https://www.google.com/search?q=git%20archive" target="_blank">Google</a></li>
+										</ul>
+									</div>
+								</td>
+								<td class="code">git archive --prefix=&lt;folder&gt;/<br />&nbsp;&nbsp;&nbsp;--format=zip &lt;commit&gt; &gt; &lt;file&gt;.zip</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

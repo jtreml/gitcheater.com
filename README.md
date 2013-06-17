@@ -4,7 +4,7 @@ gitcheater.com
 Summary
 -------
 
-[gitcheater.com](http://www.gitcheater.com) is meant to be a super-fast reference for those moments, where you just can't remember the syntax of that one command or whether you had to use three dots or two or brackets or the caret sign. Specify the branch first or the remote? What was the command again for stashing the current state? gitcheater.com is meant to answer that question at a single, quick glance.
+[gitcheater.com](http://jtreml.github.io/gitcheater.com/) is meant to be a super-fast reference for those moments, where you just can't remember the syntax of that one command or whether you had to use three dots or two or brackets or the caret sign. Specify the branch first or the remote? What was the command again for stashing the current state? gitcheater.com is meant to answer that question at a single, quick glance.
 
 Motivation
 ----------
